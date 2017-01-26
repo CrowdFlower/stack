@@ -387,3 +387,11 @@ output "name" {
 output "security_group_id" {
   value = "${aws_security_group.cluster.id}"
 }
+
+output "scale_up_arn" {
+  value = "${aws_autoscaling_policy.scale_up.arn}"
+}
+
+output "scale_down_arn" {
+  value = "${aws_autoscaling_policy.scale_down.arn}"
+}

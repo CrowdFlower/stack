@@ -319,3 +319,11 @@ output "internal_route_tables" {
 output "external_route_tables" {
   value = "${module.vpc.external_rtb_id}"
 }
+
+output "ecs_cluster_scale_up_arn" {
+  value = "${module.ecs_cluster.scale_up_arn}"
+}
+
+output "ecs_cluster_scale_down_arn" {
+  value = "${module.ecs_cluster.scale_down_arn}"
+}
