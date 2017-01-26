@@ -389,9 +389,9 @@ output "security_group_id" {
 }
 
 output "scale_up_arn" {
-  value = "foo" # ${aws_autoscaling_policy.scale_up.arn}
+  value = "${aws_autoscaling_policy.scale_up.arn}" 
 }
 
 output "scale_down_arn" {
-  value = "bar"
+  value = "${aws_autoscaling_policy.scale_down.arn}"
 }
